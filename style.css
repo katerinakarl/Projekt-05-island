@@ -17,17 +17,79 @@ body {
     line-height: 1.6;
 }
 
+.text {
+    margin-left: 10px;
+}
+
+.nadpisy {
+    font-family: Raleway;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.popisek {
+    text-align:center;
+    color: grey; 
+    text-decoration: none;   
+}
+
+.a:link{
+    color:grey;
+    text-decoration:none;
+}
 
 /* HLAVICKA */
 
+.hlavicka {
+    text-align: center;
+    font-family: raleway, white;
+    background-image: url("images/island-hlavicka.jpg");
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 500px;
+
+}
+
 .titulek {
-    font-family: 'Raleway', serif;
+    font-family: 'Raleway', serif; 
+    color: white;
+    text-align:center;
+    font-size: 40px;
+}
+
+.perex {
+    text-align:center;
+    color: white;
+    padding-left:40px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.autor {
+    font-style: italic;
+    color: whitesmoke;
+    opacity: 70%;
+
 }
 
 
 /* MENU */
 
+.menu {
+    color: grey;
+    font-family: 'Raleway', serif; 
+    text-transform:uppercase;
+    list-style-type: none;
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
 
+.p {
+    margin-left: 10px;
+
+}
 
 
 /* OBSAH */
