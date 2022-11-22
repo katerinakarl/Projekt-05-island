@@ -97,15 +97,13 @@ h1:after {
 
 .p {
     margin-left: 10px;
-
 }
 
 
 /* OBSAH */
 
 .obrazky {
-max-width: 100%;
-height: auto;
+width: 100%;
 }
 
 /* FOTOGALERIE */
@@ -140,9 +138,9 @@ box-shadow: inset darkgrey 4px 6px 20px;
 /* MOBIL */
 @media only screen and (max-width:500px){
 
-    .obrazky{
-    max-width: 100%;
-    height: auto;
+ .obrazky{
+width: 100%;
+height: auto;
     }
 }
 
