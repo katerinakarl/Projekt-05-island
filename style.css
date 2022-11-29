@@ -22,31 +22,38 @@ body {
 }
 
 .nadpisy {
-    font-family: Raleway;
-    font-size: 20px;
-    margin-left: 10px;
+font-family: Raleway;
+font-size: 20px;
+margin-left: 10px;
+padding-top: 20px;
+}
+
+.nadpisy::after {
+content: " ";
+display: block;
+width: 180px;
+height: 6px;
+background-color:rgb(51, 136, 210);
+margin-bottom: 20px;
 }
 
 .popisek {
-    text-align:center;
-    color: grey; 
-    text-decoration: none;   
+text-align:center;
+color: grey; 
+text-decoration: none;
 }
 
 a:link{
-    color:grey;
-    text-decoration:none;
+color:grey;
+text-decoration:none;
 }
 
 a:visited{
     color: grey;
 }
 
-h1:after {
-   content: “ “;
-    width: 150px;
-    height: 10px;
-    background-color: blue;
+.Co-videt2{
+padding-top: 20px;
 }
 
 /* HLAVICKA */
@@ -58,7 +65,7 @@ h1:after {
     background-size: cover;
     padding-top: 10px;
     padding-bottom: 10px;
-    max-width: 500px;
+
 }
 
 .titulek {
@@ -102,27 +109,27 @@ h1:after {
 
 /* OBSAH */
 
-.obrazky {
-width: 100%;
-}
 
 /* FOTOGALERIE */
 
 .galerie {
 display: flex;
 flex-direction:column;
-flex-grow: 1;
-flex-shrink: 1;
 align-self: center;
 align-items: center;
 }
 
-
 .foto{
+flex-grow: 1;
+flex-shrink: 1;
 }
 
 .popisek-copy {
+color:grey;
+}
 
+.popisek-galerie{
+color:grey;
 }
 
 /* PATICKA */
@@ -132,27 +139,49 @@ background-color: lightgray;
 color: grey;
 font-size: 10px;
 padding: 10px 10px 10px 10px;
-box-shadow: inset darkgrey 4px 6px 20px;
+
 }
 
 /* MOBIL */
 @media only screen and (max-width:500px){
 
- .obrazky{
+.obrazky img{
 width: 100%;
 height: auto;
-    }
+display: block;
+}
+
+.popisek {
+margin-left:20px;
+}
+
+.popisek-copy {
+margin-left: 20px;
+}
+
+.paticka {
+box-shadow: inset darkgrey 4px 6px 20px;
+}
+
+.nadpisy::after {
+margin-left: -25px;
+}
+
 }
 
 /* TABLET */
 
 @media only screen and (min-width:500px) and (max-width:1000px){
 
-/* HLAVICKA - TABLET */
-.hlavicka {
-background-size: cover;
+.body {
 max-width: 1000px;
 }
+
+/* HLAVICKA - TABLET */
+.hlavicka {
+background-image: url("images/island-hlavicka.jpg");
+background-size: cover;
+max-width: 1000px;}
 
 /* MENU - TABLET */
 .menu {
@@ -162,10 +191,304 @@ justify-content: space-between;
 margin: 20px 20px 20px 20px;
 }
 
+.polozka1{
+    border-top: 1px lightgray solid;
+    border-bottom: 1px lightgray solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+    
+    .polozka2{
+    border-top: 1px lightgray solid;
+    border-bottom: 1px lightgray solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+    
+    .polozka3{
+    border-top: 1px lightgray solid;
+    border-bottom: 1px lightgray solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+    
+    .polozka4{
+    border-top: 1px lightgray solid;
+    border-bottom: 1px lightgray solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+
 /* OBSAH - TABLET */
-.obrazky{
-margin-top: 20px;
+
+.obrazky {
 max-width: 1000px;
 }
+
+.obrazky img{
+width: 100%;
+display: block;
+position: relative;
+}
+
+.popisek {
+text-align: right;
+margin-right: 10px;
+margin-top: -30px;
+}
+
+a:link {
+color: white;
+}
+
+/* FOTOGALERIE - TABLET */
+
+.galerie {
+display:flex;
+flex-direction: row;
+justify-content: center;
+flex-basis: 1000px;
+flex-wrap: wrap;
+gap: 0px;
+
+}
+
+.foto img{
+flex-shrink: 1;
+flex-grow: 1;
+max-width: -100%;
+height: auto;
+vertical-align: middle;
+align-self: stretch;
+}
+
+.popisek-galerie {
+display:none;
+}
+
+.popisek-copy {
+display: none;
+}
+
+.popisekfoto {
+color: white;
+margin-left: 650px;
+margin-top: -30px;
+position: absolute;
+}
+
+/* PATIČKA - TABLET */
+
+.paticka{
+margin-top: -16px;
+box-shadow: inset darkgrey 4px 6px 20px;
+}
+}
+
+/* PC */
+
+@media only screen and (min-width:1000px){
+
+.hlavicka{
+background-image: url("images/island-hlavicka.jpg"), linear-gradient(50%);
+background-size: cover;
+height:auto;
+text-align: center;
+padding-left: 300px;
+padding-right: 300px;
+filter: brightness (10%);
+padding-bottom: 200px;
+display:block;
+}
+
+.body{
+background-color: white;
+border: solid 1px grey;
+display:block;
+}
+
+/*MENU-PC*/
+
+.uvodni-sekce {
+display:flex;
+align-self:stretch;
+padding-top: 60px;
+margin-top: -100px;
+margin-left: 100px;
+margin-right: 100px;
+background-color: white;
+padding-bottom: 60px;
+padding-right: 30px;
+}
+
+.menu {
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: 500px;
+text-align: left;
+margin-right: 100px;
+}
+
+.polozka1{
+border-top: 1px lightgray solid;
+}
+
+.polozka2{
+border-top: 1px lightgray solid;
+}
+
+.polozka3{
+border-top: 1px lightgray solid;
+}
+
+.polozka4{
+border-top: 1px lightgray solid;
+    }
+
+/*HLAVNÍ TEXT - PC*/
+
+.obrazky img{
+width: 100%;
+display:block;
+}
+
+.obrazky {
+margin-left: 100px;
+margin-right: 100px;
+display:block;
+position: relative;
+}
+
+.popisek {
+text-align: right;
+margin-right: 120px;
+margin-top: -30px;
+color: white;
+    }
+
+.popisekfoto {
+color: white;
+position: absolute;
+margin-left: 600px;
+margin-top: -20px;
+}
+
+.Proc-jet {
+margin-left: 100px;
+margin-right: 100px;
+margin-top: -20px;
+background-color: white;
+padding-top: 20px;
+padding-left:30px;
+padding-bottom:30px;
+padding-right: 300px;
+display:block;
+display:block;
+}
+
+.Co-videt1 {
+margin-left: 100px; 
+margin-right: 100px;
+margin-top: -20px;
+background-color: white;
+padding-top: 20px;
+padding-left:250px;
+padding-bottom:30px;
+padding-right: 300px;
+display:block;
+}
+
+.Co-videt2 {
+margin-top: -20px;
+margin-left: 100px; 
+margin-right: 100px;
+background-color: white;
+padding-top: 30px;
+padding-left:250px;
+padding-bottom:30px;
+padding-right: 200px;
+display:block;
+} 
+
+/*FOTOGALEIRE - PC*/
+
+.Fotogalerie-nadpis {
+margin-top: -25px;
+margin-left: 60px;
+background-color: white;
+margin-left: 100px; 
+margin-right: 100px;
+padding-bottom: 20px;
+display:block;
+}
+
+.galerie {
+margin-top: -25px;
+margin-left: 100px; 
+margin-right: 100px;
+}
+
+.foto img {
+transition: 0.3s;
+position:relative;
+overflow: hidden;
+}
+
+.foto:hover .popisek-galerie {
+transform:translateY(-100%);
+}
+
+.popisek-galerie {
+color: white;
+margin-top: 3px;
+padding-left: 10px;
+padding-right: 200px;
+background-color: grey;
+position: absolute;
+transition: 0.3s;
+}
+
+.popisek-copy {
+color: white;
+}
+
+a:link {
+color: white;
+}
+    
+.galerie1 {
+display: flex;
+flex-flow:row;
+flex-grow: 1;
+flex-shrink: 1;
+align-items: stretch;
+}
+    
+ .galerie2 {
+display:flex;
+flex-flow:row;
+flex-grow: 1;
+flex-shrink: 1;
+align-items: stretch;
+}
+    
+ .galerie3 {
+display:flex;
+flex-flow:row;
+flex-grow: 1;
+flex-shrink: 1;
+align-items: stretch;
+}
+
+/*PATICKA-PC*/
+
+.paticka {
+background-color: transparent;
+display:block;
+margin-top: 80px;
+margin-left: 100px;
+margin-right: 100px;
+}
+
 
 }
