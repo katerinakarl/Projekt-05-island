@@ -9,16 +9,16 @@
 
 
 body {
-    margin: 0 10 0 10;
-    padding: 0;
-    background-color: #f5f5f5;
-    font-family: 'Merriweather', serif;
-    font-size: 16px;
-    line-height: 1.6;
+margin: 0 10 0 10;
+padding: 0;
+background-color: #f5f5f5;
+font-family: 'Merriweather', serif;
+font-size: 16px;
+line-height: 1.6;
 }
 
 .text {
-    margin-left: 10px;
+ margin-left: 10px;
 }
 
 .nadpisy {
@@ -37,19 +37,37 @@ background-color:rgb(51, 136, 210);
 margin-bottom: 20px;
 }
 
+.perex::after {
+content: " ";
+display: block;
+width: 120px;
+height: 3px;
+background-color: whitesmoke;
+margin: auto;
+margin-top: 20px;
+opacity: 0.5;
+}
+
 .popisek {
 text-align:center;
 color: grey; 
 text-decoration: none;
+text-align: center;
+
+}
+
+.popisekfoto {
+color: grey;
+text-align: center;
 }
 
 a:link{
-color:grey;
+color: grey;
 text-decoration:none;
 }
 
 a:visited{
-    color: grey;
+color: grey;
 }
 
 .Co-videt2{
@@ -93,7 +111,7 @@ padding-top: 20px;
 /* MENU */
 
 .menu {
-    color: grey;
+    color: darkgrey;
     font-family: 'Raleway', serif; 
     text-transform:uppercase;
     list-style-type: none;
@@ -126,10 +144,12 @@ flex-shrink: 1;
 
 .popisek-copy {
 color:grey;
+text-align: left;
 }
 
 .popisek-galerie{
 color:grey;
+text-align: left;
 }
 
 /* PATICKA */
@@ -151,20 +171,21 @@ height: auto;
 display: block;
 }
 
-.popisek {
-margin-left:20px;
-}
-
-.popisek-copy {
-margin-left: 20px;
-}
-
 .paticka {
 box-shadow: inset darkgrey 4px 6px 20px;
 }
 
 .nadpisy::after {
 margin-left: -25px;
+}
+
+a:link{
+color: grey;
+text-decoration:none;
+    }
+
+.popisek-galerie {
+margin-left: 20px;
 }
 
 }
@@ -189,6 +210,7 @@ display:flex;
 flex-direction: row;
 justify-content: space-between;
 margin: 20px 20px 20px 20px;
+font-size: 13px;
 }
 
 .polozka1{
@@ -196,6 +218,7 @@ margin: 20px 20px 20px 20px;
     border-bottom: 1px lightgray solid;
     padding-left: 30px;
     padding-right: 30px;
+
     }
     
     .polozka2{
@@ -231,14 +254,15 @@ display: block;
 position: relative;
 }
 
-.popisek {
-text-align: right;
-margin-right: 10px;
-margin-top: -30px;
-}
+.popisekfoto {
+color: white;
+margin-left: 550px;
+margin-top: -40px;
+position: absolute;
+    }
 
 a:link {
-color: white;
+color: grey;
 }
 
 /* FOTOGALERIE - TABLET */
@@ -247,19 +271,18 @@ color: white;
 display:flex;
 flex-direction: row;
 justify-content: center;
-flex-basis: 1000px;
 flex-wrap: wrap;
 gap: 0px;
-
+flex-basis: 500px;
 }
 
 .foto img{
 flex-shrink: 1;
 flex-grow: 1;
-max-width: -100%;
 height: auto;
 vertical-align: middle;
 align-self: stretch;
+gap: 0px;
 }
 
 .popisek-galerie {
@@ -268,13 +291,6 @@ display:none;
 
 .popisek-copy {
 display: none;
-}
-
-.popisekfoto {
-color: white;
-margin-left: 650px;
-margin-top: -30px;
-position: absolute;
 }
 
 /* PATIČKA - TABLET */
@@ -359,18 +375,12 @@ display:block;
 position: relative;
 }
 
-.popisek {
-text-align: right;
-margin-right: 120px;
-margin-top: -30px;
-color: white;
-    }
-
 .popisekfoto {
+text-align: right;
+margin-right: 180px;
+margin-top: -45px;
+position: relative;
 color: white;
-position: absolute;
-margin-left: 600px;
-margin-top: -20px;
 }
 
 .Proc-jet {
@@ -382,7 +392,6 @@ padding-top: 20px;
 padding-left:30px;
 padding-bottom:30px;
 padding-right: 300px;
-display:block;
 display:block;
 }
 
