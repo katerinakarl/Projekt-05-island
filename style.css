@@ -25,7 +25,7 @@ line-height: 1.6;
 font-family: Raleway;
 font-size: 20px;
 margin-left: 10px;
-padding-top: 20px;
+font-size: 16px;
 }
 
 .nadpisy::after {
@@ -58,6 +58,7 @@ text-align: center;
 .popisekfoto {
 color: grey;
 text-align: center;
+font-size: 10px;
 }
 
 a:link{
@@ -124,19 +125,18 @@ padding-top: 20px;
 }
 
 
-/* OBSAH */
-
-
 /* FOTOGALERIE */
 
 .popisek-copy {
 color:grey;
 text-align: left;
+font-size: 10px;
 }
 
 .popisek-galerie{
 color:grey;
 text-align: left;
+font-size: 10px;
 }
 
 /* PATICKA */
@@ -256,6 +256,14 @@ color: grey;
 display:flex;
 flex-direction:row;
 flex-wrap: wrap;
+}
+
+.foto{
+width: 100%;
+display: block;
+position: relative;
+overflow: hidden;
+flex-basis: 50%;
 }
 
 .foto img{
@@ -433,19 +441,27 @@ max-width: 960px;
 margin: auto;
 box-shadow: -5px 0 5px -5px rgb(179, 179, 179), 5px 0 5px -5px rgb(207, 206, 206);
 }
+
+.foto{
+width: 100%;
+display: block;
+position: relative;
+overflow: hidden;
+flex-basis: 33.33%;
+}
     
 .foto img{
 width: 100%;
 display: block;
-flex-basis: 30%;
 position: relative;
 overflow: hidden;
+flex-basis: 33%;
 }
 
 .foto img:hover {
 transform: scaleX(1.1);
 transform: scaleY(1.1);
-    }
+}
     
 .foto:hover .popisek-galerie {
 transform:translateY(-100%);
@@ -453,13 +469,14 @@ transform:translateY(-100%);
 
 .popisek-galerie {
 color: white;
-margin-top: -1px;
-padding-left: 10px;
-padding-right: 220px;
-background-color: grey;
+margin-top: 0px;
+padding-top: 5px;
+padding-left: 40px;
+padding-right: 200px;
+background-color: rgba(0, 0, 0, 0.7);
 position: absolute;
 transition: 0.3s;
-font-size: 13px;
+font-size: 10px;
 }
 
 .popisek-copy {
