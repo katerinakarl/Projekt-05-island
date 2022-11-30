@@ -53,7 +53,6 @@ text-align:center;
 color: grey; 
 text-decoration: none;
 text-align: center;
-
 }
 
 .popisekfoto {
@@ -130,18 +129,6 @@ padding-top: 20px;
 
 /* FOTOGALERIE */
 
-.galerie {
-display: flex;
-flex-direction:column;
-align-self: center;
-align-items: center;
-}
-
-.foto{
-flex-grow: 1;
-flex-shrink: 1;
-}
-
 .popisek-copy {
 color:grey;
 text-align: left;
@@ -163,7 +150,7 @@ padding: 10px 10px 10px 10px;
 }
 
 /* MOBIL */
-@media only screen and (max-width:500px){
+@media (max-width:500px){
 
 .obrazky img{
 width: 100%;
@@ -182,12 +169,11 @@ margin-left: -25px;
 a:link{
 color: grey;
 text-decoration:none;
-    }
+}
 
 .popisek-galerie {
 margin-left: 20px;
 }
-
 }
 
 /* TABLET */
@@ -195,14 +181,14 @@ margin-left: 20px;
 @media only screen and (min-width:500px) and (max-width:1000px){
 
 .body {
-max-width: 1000px;
+margin: 0px;
 }
 
 /* HLAVICKA - TABLET */
 .hlavicka {
-background-image: url("images/island-hlavicka.jpg");
+background-image:radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/island-hlavicka.jpg");
 background-size: cover;
-max-width: 1000px;}
+}
 
 /* MENU - TABLET */
 .menu {
@@ -214,33 +200,32 @@ font-size: 13px;
 }
 
 .polozka1{
-    border-top: 1px lightgray solid;
-    border-bottom: 1px lightgray solid;
-    padding-left: 30px;
-    padding-right: 30px;
-
-    }
+border-top: 1px lightgray solid;
+border-bottom: 1px lightgray solid;
+padding-left: 15px;
+padding-right: 15px;
+}
     
-    .polozka2{
-    border-top: 1px lightgray solid;
-    border-bottom: 1px lightgray solid;
-    padding-left: 30px;
-    padding-right: 30px;
-    }
+ .polozka2{
+border-top: 1px lightgray solid;
+border-bottom: 1px lightgray solid;
+padding-left: 15px;
+padding-right: 15px;
+ }
     
-    .polozka3{
-    border-top: 1px lightgray solid;
-    border-bottom: 1px lightgray solid;
-    padding-left: 30px;
-    padding-right: 30px;
-    }
+ .polozka3{
+border-top: 1px lightgray solid;
+border-bottom: 1px lightgray solid;
+padding-left: 15px;
+padding-right: 15px;
+}
     
-    .polozka4{
-    border-top: 1px lightgray solid;
-    border-bottom: 1px lightgray solid;
-    padding-left: 30px;
-    padding-right: 30px;
-    }
+ .polozka4{
+border-top: 1px lightgray solid;
+border-bottom: 1px lightgray solid;
+padding-left: 15px;
+padding-right: 15px;
+}
 
 /* OBSAH - TABLET */
 
@@ -256,7 +241,7 @@ position: relative;
 
 .popisekfoto {
 color: white;
-margin-left: 550px;
+margin-left: 530px;
 margin-top: -40px;
 position: absolute;
     }
@@ -269,20 +254,15 @@ color: grey;
 
 .galerie {
 display:flex;
-flex-direction: row;
-justify-content: center;
+flex-direction:row;
 flex-wrap: wrap;
-gap: 0px;
-flex-basis: 500px;
 }
 
 .foto img{
+width: 100%;
+flex-basis: 45%;
+display: block;
 flex-shrink: 1;
-flex-grow: 1;
-height: auto;
-vertical-align: middle;
-align-self: stretch;
-gap: 0px;
 }
 
 .popisek-galerie {
@@ -303,10 +283,17 @@ box-shadow: inset darkgrey 4px 6px 20px;
 
 /* PC */
 
+.body {
+margin:0;
+}
+
+/*HLAVICKA-PC*/
+
+
 @media only screen and (min-width:1000px){
 
 .hlavicka{
-background-image: url("images/island-hlavicka.jpg"), linear-gradient(50%);
+background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/island-hlavicka.jpg");
 background-size: cover;
 height:auto;
 text-align: center;
@@ -329,12 +316,12 @@ display:block;
 display:flex;
 align-self:stretch;
 padding-top: 60px;
+margin:auto;
 margin-top: -100px;
-margin-left: 100px;
-margin-right: 100px;
 background-color: white;
 padding-bottom: 60px;
 padding-right: 30px;
+max-width: 960px;
 }
 
 .menu {
@@ -366,26 +353,26 @@ border-top: 1px lightgray solid;
 .obrazky img{
 width: 100%;
 display:block;
+max-width: 960px;
 }
 
 .obrazky {
-margin-left: 100px;
-margin-right: 100px;
+margin: auto;
 display:block;
 position: relative;
+max-width: 960px;
 }
 
 .popisekfoto {
 text-align: right;
-margin-right: 180px;
+margin-right: 120px;
 margin-top: -45px;
 position: relative;
 color: white;
 }
 
 .Proc-jet {
-margin-left: 100px;
-margin-right: 100px;
+margin: auto;
 margin-top: -20px;
 background-color: white;
 padding-top: 20px;
@@ -393,11 +380,11 @@ padding-left:30px;
 padding-bottom:30px;
 padding-right: 300px;
 display:block;
+max-width: 960px;
 }
 
 .Co-videt1 {
-margin-left: 100px; 
-margin-right: 100px;
+margin: auto;
 margin-top: -20px;
 background-color: white;
 padding-top: 20px;
@@ -405,44 +392,52 @@ padding-left:250px;
 padding-bottom:30px;
 padding-right: 300px;
 display:block;
+max-width: 960px;
 }
 
 .Co-videt2 {
+margin: auto;
 margin-top: -20px;
-margin-left: 100px; 
-margin-right: 100px;
 background-color: white;
 padding-top: 30px;
 padding-left:250px;
 padding-bottom:30px;
 padding-right: 200px;
 display:block;
+max-width: 960px;
 } 
 
 /*FOTOGALEIRE - PC*/
 
 .Fotogalerie-nadpis {
 margin-top: -25px;
-margin-left: 60px;
 background-color: white;
-margin-left: 100px; 
-margin-right: 100px;
 padding-bottom: 20px;
 display:block;
+margin: auto;
+max-width: 960px;
 }
 
 .galerie {
-margin-top: -25px;
-margin-left: 100px; 
-margin-right: 100px;
+display:flex;
+flex-direction:row;
+flex-wrap: wrap;
+max-width: 960px;
+margin: auto;
+}
+    
+.foto img{
+width: 100%;
+display: block;
+flex-basis: 27%;
+position: relative;
 }
 
-.foto img {
-transition: 0.3s;
-position:relative;
-overflow: hidden;
-}
-
+.foto img:hover {
+transform: scaleX(1.1);
+transform: scaleY(1.1);
+    }
+    
 .foto:hover .popisek-galerie {
 transform:translateY(-100%);
 }
@@ -455,6 +450,7 @@ padding-right: 200px;
 background-color: grey;
 position: absolute;
 transition: 0.3s;
+font-size: 13px;
 }
 
 .popisek-copy {
@@ -462,42 +458,15 @@ color: white;
 }
 
 a:link {
-color: white;
+color: grey;
 }
     
-.galerie1 {
-display: flex;
-flex-flow:row;
-flex-grow: 1;
-flex-shrink: 1;
-align-items: stretch;
-}
-    
- .galerie2 {
-display:flex;
-flex-flow:row;
-flex-grow: 1;
-flex-shrink: 1;
-align-items: stretch;
-}
-    
- .galerie3 {
-display:flex;
-flex-flow:row;
-flex-grow: 1;
-flex-shrink: 1;
-align-items: stretch;
-}
-
 /*PATICKA-PC*/
 
 .paticka {
 background-color: transparent;
 display:block;
-margin-top: 80px;
-margin-left: 100px;
-margin-right: 100px;
+margin: auto;
+max-width: 960px;
 }
-
-
 }
