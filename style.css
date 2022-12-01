@@ -152,6 +152,10 @@ padding: 10px 10px 10px 10px;
 /* MOBIL */
 @media (max-width:500px){
 
+.body{
+margin:0;
+}
+
 .obrazky img{
 width: 100%;
 height: auto;
@@ -172,7 +176,8 @@ text-decoration:none;
 }
 
 .popisek-galerie {
-margin-left: 20px;
+display: block;
+text-align: center;
 }
 }
 
@@ -198,29 +203,8 @@ justify-content: space-between;
 margin: 20px 20px 20px 20px;
 font-size: 13px;
 }
-
-.polozka1{
-border-top: 1px lightgray solid;
-border-bottom: 1px lightgray solid;
-padding-left: 15px;
-padding-right: 15px;
-}
     
- .polozka2{
-border-top: 1px lightgray solid;
-border-bottom: 1px lightgray solid;
-padding-left: 15px;
-padding-right: 15px;
- }
-    
- .polozka3{
-border-top: 1px lightgray solid;
-border-bottom: 1px lightgray solid;
-padding-left: 15px;
-padding-right: 15px;
-}
-    
- .polozka4{
+ .polozky{
 border-top: 1px lightgray solid;
 border-bottom: 1px lightgray solid;
 padding-left: 15px;
@@ -241,13 +225,17 @@ position: relative;
 
 .popisekfoto {
 color: white;
-margin-left: 530px;
+margin-left: 300px;
 margin-top: -40px;
 position: absolute;
-    }
+}
 
 a:link {
 color: grey;
+}
+
+#odkazyobrazky a:link {
+color: white;
 }
 
 /* FOTOGALERIE - TABLET */
@@ -342,21 +330,13 @@ text-align: left;
 margin-right: 100px;
 }
 
-.polozka1{
+.polozky{
 border-top: 1px lightgray solid;
 }
 
-.polozka2{
-border-top: 1px lightgray solid;
+#menu a:link{
+color: grey;
 }
-
-.polozka3{
-border-top: 1px lightgray solid;
-}
-
-.polozka4{
-border-top: 1px lightgray solid;
-    }
 
 /*HLAVNÍ TEXT - PC*/
 
@@ -367,6 +347,16 @@ max-width: 960px;
 box-shadow: -5px 0 5px -5px rgb(179, 179, 179), 5px 0 5px -5px rgb(207, 206, 206);
 }
 
+.nadpisy::after {
+content: " ";
+display: block;
+width: 180px;
+height: 6px;
+background-color:rgb(51, 136, 210);
+margin-bottom: 20px;
+margin-left: -10px;
+}
+
 .obrazky {
 margin: auto;
 display:block;
@@ -375,10 +365,14 @@ max-width: 960px;
 }
 
 .popisekfoto {
-text-align: right;
-margin-right: 120px;
 margin-top: -45px;
 position: relative;
+color: white;
+max-width: 960px;
+text-align: right;
+}
+
+#odkazyobrazky a:link {
 color: white;
 }
 
@@ -484,7 +478,7 @@ color: white;
 }
 
 a:link {
-color: grey;
+color: white;
 }
     
 /*PATICKA-PC*/
