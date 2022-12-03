@@ -48,6 +48,20 @@ margin-top: 20px;
 opacity: 0.5;
 }
 
+.obrazky img{
+width: 100%;
+height: auto;
+display: block;
+margin: auto;
+    }
+
+.obrazky{
+width: 100%;
+height: auto;
+display: block;
+margin: auto;
+ }
+
 .popisek {
 text-align:center;
 color: grey; 
@@ -146,6 +160,7 @@ background-color: lightgray;
 color: grey;
 font-size: 10px;
 padding: 10px 10px 10px 10px;
+display: block;
 
 }
 
@@ -179,6 +194,13 @@ text-decoration:none;
 display: block;
 text-align: center;
 }
+
+
+.foto img{
+    width: 100%;
+    height: auto;
+    display: block;
+    }
 }
 
 /* TABLET */
